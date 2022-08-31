@@ -25,7 +25,7 @@ def run_experiment(xs: np.ndarray, ys: np.ndarray, config: dict, batch_sizes) ->
     _, p = xs.shape
     ws = np.empty(T, dtype=np.int_)
     yobs = np.empty(T)
-    probs = np.zeros((T, T, K))
+    probs = np.zeros((T, T, K)) # dimensions: actual time, hypothetical time, treatment arm
     Probs_t = np.zeros((T, K))
     floor_start = config['floor_start']
     floor_decay = config['floor_decay']

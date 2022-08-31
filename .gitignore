@@ -130,3 +130,8 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+.idea
+*.pkl
+aw_contextual/bin
+aw_contextual/etc
+aw_contextual/share
